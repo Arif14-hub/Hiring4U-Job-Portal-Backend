@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employer Login | Hiring4U</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+<div class="login-card">
+    <h2>Employer Login</h2>
+    <p>Hire the best talent</p>
+
+    <input type="email" id="email" placeholder="Company Email">
+    <input type="password" id="password" placeholder="Password">
+
+    <button onclick="login('EMPLOYER')">Login</button>
+</div>
+
+<script>
+    function login(role){
+        fetch("http://localhost:8080/api/auth/login",{
+            method:"POST",
+            headers:{ "Content-Type":"application/json" },
+            body:JSON.stringify({
+                email:email.value,
+                password:password.value,
+                role:role
+            })
+        }).then(res=>res.json())
+            .then(()=>alert("Employer Login Success"))
+            .catch(()=>alert("Login Failed"));
+    }
+</script>
+
+</body>
+</html>

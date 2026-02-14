@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, serif;
+    background: #f4f6f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-card {
+    background: white;
+    padding: 30px;
+    width: 320px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.login-card.admin {
+    border-top: 5px solid black;
+}
+
+.login-card h2 {
+    margin-bottom: 10px;
+}
+
+.login-card input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.login-card button {
+    width: 100%;
+    padding: 10px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
