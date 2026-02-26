@@ -1,4 +1,4 @@
-# 🚀 Hiring4U – Job Portal Backend (Spring Boot)
+#  Hiring4U – Job Portal Backend (Spring Boot)
 
 Hiring4U is a role-based Job Portal Backend application built using Spring Boot and MySQL.  
 It supports Candidate and Recruiter registration, authentication, and job posting functionality.
